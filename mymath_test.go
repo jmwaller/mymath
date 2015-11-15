@@ -32,7 +32,7 @@ func TestRoundPlus(t *testing.T) {
 		{100.499999999, 2, 100.50},
 		{-0.77777, 4, -0.7778},
 		{-0.11111, 0, 0},
-		{0, 0, 0},
+		{0, 1, 0},
 	}
 	for _, c := range cases {
 		got := RoundPlus(c.in1, c.in2)
